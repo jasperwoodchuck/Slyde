@@ -1,63 +1,102 @@
-# Obsidian Sample Plugin
+# Slyde
 
-A minimal Obsidian plugin built from scratch using TypeScript and esbuild (no official template).
+A lightweight Obsidian plugin that lets you **adjust the readable line length (RLL)** of your notes in real time.
+
+## Features
+
+* Adjustable readable line length using a **slider in the status bar**
+* Set a **default width** with one click
+* Automatically adapts to **window resizing**
+* Option to **persist width** across sessions
+* Clean and minimal UI
+
+
+## How it works
+
+Slyde modifies Obsidian’s internal CSS variables:
+
+* `--line-width`
+* `--file-line-width`
+
+This allows you to dynamically control how wide your text appears in the editor.
+
+
+## Installation
+
+### Manual Installation
+
+1. Download the following files from the latest release:
+
+   * `main.js`
+   * `manifest.json`
+   * `styles.css` (if available)
+
+2. Create a folder inside your vault:
+
+```
+.obsidian/plugins/slyde/
+```
+
+3. Place the files inside that folder.
+
+4. Restart Obsidian.
+
+5. Enable **Slyde** in:
+
+   ```
+   Settings → Community Plugins
+   ```
+
+
+## Usage
+
+* Use the **slider in the status bar** to adjust line width.
+* Click the displayed value (button) to reset to your default width.
+* The width is applied instantly.
+
+
+## Settings
+
+You can configure:
+
+* **Default RLL** – The width used when resetting
+* **Current RLL** – Your active width
+* **Persistent Width** – Prevents auto-adjustment on resize
+
+
+## Behavior Notes
+
+* The plugin automatically:
+
+  * Hides itself when no Markdown file is open
+  * Adjusts maximum width based on editor size
+* Width is constrained to avoid overflow issues
 
 
 ## Development
 
-Install dependencies:
+### Build
 
 ```bash
 npm install
-```
-
-Start development (watch mode):
-
-```bash
-npm run dev
-```
-
-Build plugin:
-
-```bash
 npm run build
 ```
 
-Lint code:
-
-```bash
-npm run lint
-```
-
-## Structure
+### Files included in release
 
 ```
-obsidian-sample-plugin/
-├── src
-│   ├── main.ts
-│   └── settings.ts
-├── esbuild.config.mjs
-├── eslint.config.mjs
-├── LICENSE
-├── manifest.json
-├── package-lock.json
-├── package.json
-├── README.md
-├── styles.css
-├── tsconfig.json
-└── versions.json
+main.js
+manifest.json
+styles.css (optional)
 ```
 
-## Installation
 
-1. Copy this folder to:
+## Compatibility
 
-   ```
-   .obsidian/plugins/your-plugin-id/
-   ```
-2. Run build:
+* Requires Obsidian version specified in `manifest.json`
+* Works with standard Markdown views
 
-   ```bash
-   npm run build
-   ```
-3. Enable plugin in Obsidian settings
+
+## License
+
+[MIT License](License)

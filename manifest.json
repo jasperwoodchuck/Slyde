@@ -1,9 +1,9 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
+	"id": "slyde",
+	"name": "Slyde",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "",
+	"description": "Adjusts and controls the readable line width in Obsidian using a slider.",
 	"author": "Jasperwoodchuck",
 	"authorUrl": "https://www.youtube.com/@jasperwoodchuck",
 	"fundingUrl": "",

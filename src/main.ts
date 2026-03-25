@@ -53,8 +53,9 @@ export default class Slyde extends Plugin {
             await this.saveSettings();
         });
 
-        this.button.addEventListener("click", () => {
+        this.button.addEventListener("click", async () => {
             this.updateRLL(this.settings.defaultRLL);
+            await this.saveSettings();
         });
 
         this.handleVisibility();

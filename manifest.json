@@ -1,7 +1,7 @@
 {
 	"id": "slyde",
 	"name": "Slyde",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "Adjusts and controls the readable line width using a slider.",
 	"author": "Jasperwoodchuck",

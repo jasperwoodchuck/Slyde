@@ -49,13 +49,13 @@ export default class Slyde extends Plugin {
             this.updateRLL(Number(this.slider.value));
         });
 
-        this.slider.addEventListener("change", async () => {
-            await this.saveSettings();
+        this.slider.addEventListener("change", () => {
+            void this.saveSettings();
         });
 
-        this.button.addEventListener("click", async () => {
+        this.button.addEventListener("click", () => {
             this.updateRLL(this.settings.defaultRLL);
-            await this.saveSettings();
+            void this.saveSettings();
         });
 
         this.handleVisibility();

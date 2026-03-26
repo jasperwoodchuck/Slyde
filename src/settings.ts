@@ -28,7 +28,7 @@ export class SlydeSettingTab extends PluginSettingTab {
         containerEl.empty();
 
         new Setting(containerEl)
-            .setName("Default Width")
+            .setName("Default width")
             .setDesc("The default editor width (in pixels)")
             .addSlider(
                 slider => { slider
@@ -43,7 +43,7 @@ export class SlydeSettingTab extends PluginSettingTab {
             );
         
         new Setting(containerEl)
-            .setName("Persistent Width?")
+            .setName("Persistent width?")
             .setDesc("Keep the editor width fixed, even when the window is resized smaller")
             .addToggle(
                 toggle => { toggle

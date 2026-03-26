@@ -1,6 +1,6 @@
 {
 	"name": "slyde",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Adjusts and controls the readable line width using a slider.",
 	"main": "main.js",
 	"scripts": {

@@ -1,6 +1,6 @@
 import { Plugin } from "obsidian";
 
-export default class SamplePlugin extends Plugin {
+export default class Slyde extends Plugin {
 	async onload() {
 		console.log("Plugin Loaded");
 	}

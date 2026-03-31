@@ -3,7 +3,7 @@
 	"name": "slyde",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "",
+	"description": "Adds a slider for adjusting readable line length dynamically.",
 	"author": "Jasperwoodchuck",
 	"authorUrl": "https://www.youtube.com/@jasperwoodchuck",
 	"fundingUrl": "",
